@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background: rgb(170, 170, 187);
+    color: black;
+    
+    
+
+}
+ul {
+    list-style: none;
+    
+}
