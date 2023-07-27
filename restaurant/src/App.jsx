@@ -1,7 +1,10 @@
-import Header from './components/Header'
-import Home from './components/Home'
+import Header from './components/header/Header'
+import Home from './components/Home/Home'
 import './App.css'
-import Menu from './components/Menu'
+import Menu from './components/Menu/Menu'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Reserve from './components/Reserve/Reserve'
+
 
 
 const dishes = [
@@ -27,17 +30,20 @@ const dishes = [
 
 
 function App() {
- 
-
   return (
     <>
-      <div> 
-      <Header/>
-        <Home/>        
-        <Menu dishes={dishes}/>         
-      </div>      
+      <div>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/menu" element={<Menu dishes={dishes} />} />
+             <Route path="/reserve" element={<Reserve />} /> 
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
-  )
+  );
 }
 
 export default App

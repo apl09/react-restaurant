@@ -1,0 +1,17 @@
+.containerReserve{
+    margin-top: 20%;
+    display: flex;   
+    gap: 10%;
+
+}
+
+
+.containerReserve input{
+    
+    background-color: rgb(209, 209, 209);
+    border-radius: 20px;
+    
+    
+    
+
+}
