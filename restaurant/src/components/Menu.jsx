@@ -3,7 +3,7 @@ import './Menu.css'
 
 const Menu =(props)=> {
     const listOfDishes = props.dishes.map((dish) => (
-      <li key={dish.id}>
+      <li>
         <p>{dish.id} </p>
         <p>Nombre: {dish.name} </p>
         <p>Descripcion: {dish.description} </p>
